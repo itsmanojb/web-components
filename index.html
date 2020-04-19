@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Components</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Web components -->
+  <script src="./components/TimerButton.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <section>
+      <h4>1. Timer Button</h4>
+      <p>Button with timer to undo the action.</p>
+      <pre>
+  &lt;timer-button&gt;
+    &lt;span slot="text"&gt;Click Me&lt;/span&gt;
+  &lt;/timer-button&gt;
+</pre>
+      <div class="info">
+        The <code>radius</code>, <code>width</code>, and <code>timer</code> can be changed by passing the following
+        attributes: <br>
+        <div class="pre">
+          &lt;timer-button time="5" radius="20" stroke="4"&gt;
+        </div>
+      </div>
+      <div class="info">
+        Supported css custom properties:<br>
+        <div class="pre v2">
+          <span>--background</span> Button background color<br />
+          <span>--background-hover</span> Button background color on hover<br />
+          <span>--background-active</span> Button background color on active or focued<br />
+          <span>--color</span> Button text color<br />
+          <span>--padding-x</span> Button padding-left and padding-right<br />
+          <span>--padding-y</span> Button padding-top and padding-bottom<br />
+          <span>--font-size</span> Button font size<br />
+          <span>--border-radius</span> Button border-radius<br />
+          <span>--font-family</span> Button font-family, default <span>inherit</span>
+        </div>
+      </div>
+      <div class="view">
+        <timer-button>
+          <span slot="text">Click Me</span>
+        </timer-button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
