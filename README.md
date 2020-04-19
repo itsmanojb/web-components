@@ -15,15 +15,11 @@
 
 #### How to view
 
-1. Install `http-server` package via `npm` if you don't have it already.
+Install `http-server` package via `npm` if you don't have it already, then serve the `index.html`
 
 ```
-npm i http-server
-```
-2. Then serve the `index.html` using any it server, e.g.
-
-```
-http-server -o
+$ npm i http-server
+$ http-server -o
 ```
 
 That's all.
